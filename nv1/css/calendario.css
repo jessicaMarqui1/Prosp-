@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Noto+Sans:wght@100;400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=League+Spartan:wght@700&family=Noto+Sans:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+
+body{
+    background-color: #131313;
+}
+
+
+header {
+    background-color: rgb(0, 0, 0);
+}
+
+.center {
+    max-width: 1100px;
+    padding: 0 2%;
+    display: flex;
+    margin: 0 auto;
+}
+/*COMEÇO DO  MENU*/
+.menu-container {
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.menu-container a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 8px 10px;
+    transition: 0.8s;
+color: white;
+}
+
+
+.menu-container a:hover {
+    color: #f694b0;
+}
+
+.menu-container a.active-menu {
+    background-color: #DC4F76;
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    height: auto;
+    width: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section.main {
+    min-height: 500px;
+    background-image: url('img/fundo1.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/*TEXTO DENTRO DA IMAGEM*/
+
+.chamada {
+    color: black;
+    position: absolute;
+    left: 10%;
+    background-color: transparent;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ h1 {
+    top: 8rem;
+    margin-left: 22rem;
+    font: 600 128px "League Spartan", sans-serif;
+    position: relative;
+    width: 1106px;
+    height: 246px;
+    color: white; text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.texto-info {
+    margin-left: -10rem;
+    color: #FFF;
+    font-family: "League Spartan", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.chamada .btn-action3 {
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    margin-left: -25rem;
+    font-family: "Outfit";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: var(--pink1);
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #FF496A 32.76%, #EF4B55 103.24%, #9D4747 103.24%, #F63232 103.24%);
+}
+
+.btn-action3:hover{
+    background-color: black;
+    color: #3b1018;
+}
+
+.chamada button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #DC4F76;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
+}
+
+/*COMEÇO DO CARD PRETO*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 20px;
+}
+
+.card {
+    width: 300px; 
+    text-align: center;
+    background-color:  #2c2c2c;
+    padding: 20px 10px;
+    border-radius: 15px;
+    border: 1px solid #DC4F76;
+    margin: 25px;
+    box-shadow: 0 4px 4px #DC4F76;
+    margin-left: 10rem;
+    margin-bottom: 30px;
+}
+
+
+.card h1 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card h2{
+    color: #DC4F76;
+} 
+
+.card h3{
+    color: #DC4F76
+}
+
+.card p {
+    font-size: 22px;
+    color: #fff;
+}
+
+.card a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: #000000;
+    padding: 10px;
+    flex-direction: column;
+}
+
+
+.highlight h3 {
+    display: block;
+    color: #FF496A;
+font-family: Karla;
+font-size: 50px;
+font-style: normal;
+font-weight: 400;
+margin-left: 10%;
+margin-top: 15px;
+}
+
+.text-card h2{
+    font-size: 25px;
+    color: #ffffff;
+    font-family: 'Karla';
+    display: block;
+    margin-left: 50%;   
+    margin-top: 10px;
+    flex-direction: column;
+
+}
+
+
+/* BOTÃO*/
+.btn-action {
+    background-color: #FF496A; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-action:hover {
+    background-color: #d63031; 
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        margin-left: 0; 
+    }
+
+    .chamada h1 {
+        top: 4rem; 
+        margin-left: 8rem; 
+        font-size: 62px; 
+    }
+
+    .texto-info {
+        margin-top: -7rem; 
+        margin-left: -45REM; 
+        font-size: 25px;
+    }
+}
+
+/*RODAPÉ*/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;}

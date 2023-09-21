@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400&family=Noto+Sans:wght@100;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=League+Spartan:wght@700&family=Noto+Sans:wght@100;400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            background-color: #131313;
+        }
+
+        header {
+            background-color: rgb(0, 0, 0);
+            position: relative;
+        }
+
+        .center {
+            max-width: 1100px;
+            padding: 0 2%;
+            display: flex;
+            margin: 0 auto;
+        }
+
+        /* COMEÇO DO  MENU */
+        .menu-container {
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+        }
+
+        .menu-container a {
+            font-family: "League Spartan", sans-serif;
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            line-height: 40px;
+            padding: 8px 10px;
+            transition: 0.8s;
+            font-weight: bold;
+            color: white;
+        }
+
+        .menu-container a:hover {
+            color: #f694b0;
+        }
+
+        .menu-container a.active-menu {
+            background-color: #DC4F76;
+        }
+
+        .logo {
+            color: rgb(255, 255, 255);
+            margin-top: 15px;
+            height: auto;
+            width: 100px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        /* COMEÇO DO TEXTO DENTRO DA IMAGEM */
+        .chamada {
+            color: black;
+            position: absolute;
+            left: 10%;
+            top: 50%;
+            transform: translate(-10%, -50%);
+            background-color: transparent;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        h1 {
+            font: 10000 28px "League Spartan", sans-serif;
+            width: 100%;
+            color: white;
+            text-shadow: black 0.1em 0.1em 0.2em;
+        }
+
+        /* COMEÇO DO CARD PRETO */
+        .text-card {
+            background-color: #1f1f1f;
+            padding: 25px;
+            margin: 20px;
+        }
+
+        .highlight h3 {
+            color: #FF496A;
+            font-family: "League Spartan", sans-serif;
+            font-size: 24px;
+            font-weight: lighter;
+            margin-top: 15px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #ffffff;
+            font-family: 'Karla';
+            margin-top: 10px;
+        }
+
+        /* BOTÃO */
+        .btn-action {
+            background-color: #FF496A;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn-action:hover {
+            background-color: #d63031;
+        }
+
+        /* IMAGENS */
+        .imagens {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imagens img {
+            margin: 10px;
+        }
+
+        /* RODAPÉ */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .menu-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .menu-icon {
+                display: block;
+                margin-top: 15px;
+            }
+
+            .menu {
+                display: none;
+                width: 100%;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .menu-container.active-menu .menu {
+                display: block;
+            }
+
+            .logo {
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+
+            .chamada {
+                left: 5%;
+                transform: translate(-5%, -50%);
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .text-card {
+                padding: 15px;
+            }
+
+            .highlight h3 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+        }

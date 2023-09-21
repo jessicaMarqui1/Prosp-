@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ff69b4;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.left-side {
+    background-color: #ff69b4; 
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilos para h3 */
+h3 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px; 
+    }
+}
+
+
+.left-side img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.right-side {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 50%;
+}
+
+.login-form {
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.inputs p {
+    margin: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.inputs input[type="text"],
+.inputs input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.inputs a {
+    display: block;
+    background-color: #ff69b4;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.inputs a:hover {
+    background-color: #ff4783;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-side img {
+        max-width: 100%;
+        height: auto;
+    }
+}

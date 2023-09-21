@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=League+Spartan:wght@700&family=Noto+Sans:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    font-family
+    : 'League Spartan';
+}
+
+/* Declaração de Palheta de Cores */
+
+:root{
+    --white: #fff;
+    --pink1: #DC4F76;
+    --pink2: 
+}
+
+body{
+    background-color: #131313;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+}
+
+.center {
+    max-width: 1100px;
+    padding: 0 2%;
+    display: flex;
+    margin: 0 auto;
+}
+
+/*COMEÇO DO  MENU*/
+
+.menu-container {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu-container a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 8px 10px;
+    transition: 0.8s;
+color: white;
+}
+
+
+.menu-container a:hover {
+    color: #f694b0;
+}
+
+.menu-container a.active-menu {
+    background-color: var(--pink1);
+}
+
+.logo {
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    height: auto;
+    width: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section.main {
+    min-height: 650px;
+    background-image: url('img/fundo1.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/*TEXTO DENTRO DA IMAGEM*/
+
+.chamada {
+    color: black;
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    background-color: transparent;
+    padding: 6rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chamada h1 {
+    color: #ffffff;
+    text-align: left;
+    font: 600 128px "League Spartan", sans-serif;
+    position: relative;
+    width: 1106px;
+    height: 246px;
+    color: white; text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.texto-info h3 {
+    margin-left: -540px;
+    color: #FFF;
+    font-family: "League Spartan", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.chamada .btn-action {
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    margin-left: -50rem;
+    font-family: "Outfit";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: var(--pink1);
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #FF496A 32.76%, #EF4B55 103.24%, #9D4747 103.24%, #F63232 103.24%);
+}
+
+.btn-action:hover{
+    background-color: black;
+    color: #3b1018;
+}
+
+.chamada .btn-action2 {
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    margin-left: -5rem;
+    font-family: "Outfit";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: var(--pink1);
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: -83px;
+    background: linear-gradient(90deg, #FF496A 32.76%, #EF4B55 103.24%, #9D4747 103.24%, #F63232 103.24%);
+}
+
+.chamada .btn-action2:hover{
+    color: rgb(34, 34, 34)
+}
+
+.chamada .btn-action p {
+    align-items: center;
+    color: #FFF;
+    font-family: League Spartan;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.5s;
+}
+
+.chamada .btn-action2 p {
+    align-items: center;
+    color: #FFF;
+    font-family: League Spartan;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: 0.5s;
+}
+
+/*COMEÇO DO CARD PRETO*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 20px;
+}
+
+.card {
+    width: 300px; 
+    margin-bottom: 25px; 
+    text-align: center;
+    background-color:  #2c2c2c;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid var(--pink1);
+    margin: 25px;
+    box-shadow: 0 4px 4px var(--pink1);
+    margin-bottom: 15px;
+}
+
+
+.card h1 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.highlight {
+    display: flex; /* Torna o container um flex container */
+    flex-direction: row; /* Alinha os elementos na mesma linha */
+    background-color: #000000;
+    padding: 2rem;
+    align-items: center; /* Alinha os elementos verticalmente ao centro */
+}
+
+ .highlight h3 {
+    display: inline; 
+    color: #ebebeb;
+    font-family: Karla;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 10%;  
+    margin-top: 0; 
+  }
+
+  .voc-mas-livre-pra-crescer {
+    text-align: left;
+    font: 400 64px "Karla", sans-serif;
+    position: absolute;
+    left: 300px;
+    top: 713px;
+    width: 383px;
+    height: 234px;
+  }
+  .voc-mas-livre-pra-crescer-span {
+    align-items: center;
+    color: #ffffff;
+    font: 400 64px "Karla", sans-serif;
+  }
+  .voc-mas-livre-pra-crescer-span2 {
+    align-items: center;
+    color: #ff496a;
+    font: 400 64px "Karla", sans-serif;
+  }
+
+  .esteja-ligado-nos-vestibulares {
+    align-items: center;
+    color: #ffffff;
+    text-align: left;
+    font: 300 36px "Inter", sans-serif;
+    position: absolute;
+    left: 800px;
+    top: 45rem;
+    width: 628px;
+    height: 36px;
+  }
+  .participe-dos-melhores-vestibulinhos {
+    align-items: center;
+    color: #ffffff;
+    text-align: left;
+    font: 300 36px "Inter", sans-serif;
+    position: absolute;
+    left: 800px;
+    top: 50rem;
+    width: 628px;
+    height: 36px;
+  }
+  .saiba-mais-sobre-os-cursos {
+    color: #ffffff;
+    text-align: left;
+    font: 300 36px "Inter", sans-serif;
+    position: absolute;
+    left: 800px;
+    top: 55rem;
+    width: 625px;
+    height: 35px;
+  }
+
+.text-card h2{
+    font-size: 25px;
+    color: #ffffff;
+    font-family: 'Karla';
+    display: block;
+    margin-left: 50%;   
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+strong {
+    color: #FF496A;
+}
+
+/* BOTÃO*/
+
+.btn-action {
+    background-color: #FF496A; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    
+}
+
+.btn-action:hover {
+    background-color: #d63031; 
+}
+
+/* IMAGENS */
+
+.imagens {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 5rem;
+    margin-bottom: 4rem;
+}
+
+.imagens img {
+    margin: 10px; 
+}
+
+/*RODAPÉ*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos responsivos */
+
+@media screen and (max-width: 768px) {
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-container a {
+        margin: 10px 0;
+    }
+
+    .chamada {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .chamada h1 {
+        left: -8rem;
+        margin-left: -12rem;
+        font-size: 80px;
+        text-align: center;
+    }
+
+    .texto-info h3 {
+        margin-left: -20rem;
+        text-align: center;
+    }
+
+    .btn-action,
+    .btn-action2 {
+        margin-left: -20rem;
+    }
+
+    .voc-mas-livre-pra-crescer,
+    .esteja-ligado-nos-vestibulares,
+    .participe-dos-melhores-vestibulinhos,
+    .saiba-mais-sobre-os-cursos {
+        text-align: center;
+        position: relative;
+        left: 0;
+        top: auto;
+        width: auto;
+        height: auto;
+    }
+}
+
+/* Adicione mais regras de media query conforme necessário para outros tamanhos de tela */
